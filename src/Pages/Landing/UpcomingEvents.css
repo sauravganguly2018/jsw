@@ -1,0 +1,241 @@
+.upcomingEvents {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.upcomingEvents .outer2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    /* background-color: green; */
+}
+
+.upcomingEvents .outer2 .heading2 {
+    position: relative;
+    width: 220px;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+}
+
+.upcomingEvents .outer2 .heading2 img {
+    position: absolute;
+    width: 100%;
+    right: 6px;
+}
+
+.upcomingEvents .outer3{
+    display:flex;
+    justify-content: space-between;
+    height:85%;
+    margin-top:20px;
+    /* gap:15px; */
+}
+
+.outer3 .calendar{
+    /* background-color: yellow; */
+    width:40%;
+    height:100%;
+    
+}
+
+.outer3 .calendar img{
+    width:100%;
+    height:110%;
+}
+
+.outer3 .cards{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    width:58%;
+    height:100%;
+}
+
+.outer3 .pagination{
+    position:absolute;
+    width:100%;
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    bottom:0px;
+}
+
+.outer3 .pagination .inactive{
+    width:8px;
+    height:8px;
+    border-radius:8px;
+    background-color: #C12F33;
+}
+
+.outer3 .pagination .active{
+    width:24px;
+    height:8px;
+    border-radius: 16px;
+    background-color: #C12F33;;
+}
+
+.outer3 .card{
+    width:45%;
+    height:95%;
+    border-radius:4px 24px 4px 24px;
+    overflow:hidden;
+    box-shadow: 2px 2px 10px 1px grey;
+}
+
+.outer3 .card img{
+    width:100%;
+    height:50%;
+}
+
+.outer3 .cardContent{
+    width:100%;
+    height:50%;
+    padding:2px 10px;
+    /* background-color: maroon; */
+}
+
+.outer3 .cardContent .cardSubtitle{
+    color: var(--Gray-5, #232323);
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.outer3 .cardContent .cardHeading{
+    color: var(--Gray-5, #232323);
+font-family: "Noto Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; 
+}
+
+
+.outer3 .cardContent svg{
+    width:100%;
+}
+
+.outer3 .cardContent .cardText{
+    overflow: hidden;
+color: var(--Gray-5, #232323);
+text-overflow: ellipsis;
+/* white-space: nowrap; */
+font-family: "Noto Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.outer3 .cardContent .learnMore{
+    margin-top: 20px;
+    color: var(--Gray-5, #232323);
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width:1150px){
+    .outer3 .calendar {
+        height:90%;
+    }
+    .outer3 .cards {
+        height:95%;
+    }
+    .outer3 .cardContent .cardSubtitle {
+        font-size: 13px;
+    }
+    .outer3 .cardContent .cardHeading {
+        font-size: 16px;
+    }
+    .outer3 .cardContent .cardText {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    .outer3 .cardContent .learnMore{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .outer3 .cardContent{
+        height:45%;
+    }
+    .outer3 .card img{
+        height:55%;
+    }
+    .outer3 .cardContent .cardSubtitle {
+        font-size: 12px;
+    }
+    .outer3 .cardContent .cardHeading {
+        font-size: 14px;
+    }
+    .outer3 .cardContent .cardText {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .outer3 .cardContent .learnMore{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .outer3 .calendar {
+        height:80%;
+    }
+    .outer3 .cards {
+        height:85%;
+    }
+    .outer3 .cardContent .cardSubtitle {
+        font-size: 10px;
+    }
+    .outer3 .cardContent .cardHeading {
+        font-size: 12px;
+    }
+    .outer3 .cardContent .cardText {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+    .outer3 .cardContent .learnMore{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:800px){
+    .outer3 .calendar {
+        height:75%;
+    }
+    .outer3 .cards {
+        height:80%;
+    }
+    .outer3 .cardContent .cardSubtitle {
+        font-size: 9px;
+    }
+    .outer3 .cardContent .cardHeading {
+        font-size: 11px;
+    }
+    .outer3 .cardContent .cardText {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+    .outer3 .cardContent .learnMore{
+        font-size: 9px;
+    }
+}
+

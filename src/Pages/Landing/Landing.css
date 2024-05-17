@@ -1,0 +1,219 @@
+.outer{
+    position:'relative';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:100vh;
+    /* overflow: hidden; */
+    font-family: "Noto Sans";
+}
+
+.floatingChat{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:2;
+}
+
+.floatingChat::after{
+    position:absolute;
+    content:"";
+    top:12px;
+    left:15px;
+    width:16px;
+    height:16px;
+    border-radius: 16px;
+    background-color: #C12F33;
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease; /* Add transition */
+}
+
+/* .floatingChat:hover::after{
+    width:80px;
+    height:80px;
+    border-radius: 80px;
+    top:-20px;
+    left:-20px;
+} */
+
+/* .outer .circle{
+    width:850px;
+    height:850px;
+    position:absolute;
+    top:15%;
+    left:-25%;
+    z-index: -1;
+    border-radius: 966px;
+background: #D6E0FF;
+
+
+filter: blur(101.8499984741211px);
+} */
+
+.outer1{
+    width:80%;
+    height:80%;
+}
+
+.innerDiv{
+    width:100%;
+    height:50%;
+    display:flex;
+    position:relative;
+}
+
+.innerDiv .bottomRuler{
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    right: 35px;
+}
+
+.innerDiv .bottomRuler img{
+    width:100%;
+}
+
+.innerDiv .img1{
+    width:35%;
+}
+
+.innerDiv .img2{
+    width: 50%;
+    height: 175%;
+    margin-top: -9%;
+}
+
+.contentDiv{
+    width:50%;
+    padding-top:4%;
+}
+
+.contentDiv2{
+    padding-top:6%;
+    padding-left:5%;
+}
+
+.contentDiv p{
+    color: #000;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 105%;
+margin-bottom:5px;
+}
+
+.contentDiv span{
+    color: #000;
+font-family: "Noto Sans";
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 105%;
+vertical-align: middle;
+}
+
+.contentDiv .registerButton{
+    display: flex;
+    width:80%;
+padding: 6px 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+margin-top: 20px;
+border-radius: 4px 24px;
+background: #4798EF;
+
+/* Shadows/Light theme/Elevation 02 */
+box-shadow: 0px 1px 2px 0px rgba(35, 35, 47, 0.06), 0px 4px 8px 0px rgba(35, 35, 47, 0.08);
+
+}
+
+.contentDiv .registerButton p{
+    color: #FFF;
+}
+
+.registerButton p:nth-child(1){
+    font-family: "Noto Sans";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%; 
+}
+
+.registerButton p:nth-child(2){
+text-align: center;
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 105%;
+}
+
+@media screen and (max-width: 1050px) {
+    .contentDiv{
+        padding-top: 11%;
+    }
+    .contentDiv p{
+        font-size: 17px;
+   }
+   .contentDiv span{
+    font-size: 30px;
+   }
+
+   .innerDiv .img1{
+    height:80%;
+    align-self: flex-end;
+   }
+
+   .innerDiv .img2{
+    margin-top: -12%;
+   }
+
+   .registerButton p:nth-child(1){
+    font-size: 18px;
+   }
+   .registerButton p:nth-child(2){
+    font-size: 12px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .innerDiv .img1{
+    width:40%;
+   }
+
+   .contentDiv{
+    padding-top: 30%;
+    width:60%;
+   }
+   .contentDiv p{
+    font-size: 15px;
+   }
+   .contentDiv span{
+    font-size: 25px;
+   }
+   .registerButton p:nth-child(1){
+    font-size: 15px;
+   }
+   .registerButton p:nth-child(2){
+    font-size: 8px;
+   }
+   .innerDiv .bottomRuler{
+    bottom:-10px;
+    right:10px;
+   }
+   .innerDiv .img2{
+    margin-top:-17%;
+    width:40%;
+    height:150%;
+   }
+}
+
+@media screen and (max-width:450px) and (min-height:650px){
+    .outer{
+        margin-top:-25%;
+    }
+}

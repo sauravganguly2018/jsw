@@ -1,0 +1,13 @@
+:root {
+    --deep-blue: rgba(29, 10, 105, 1);
+    --white: rgba(255, 255, 255, 1);
+    --navy-light: rgba(124, 169, 194, 1);
+    --navy-dark: rgba(0, 91, 143, 1);
+    --gray-2: rgba(204, 204, 204, 1);
+    --gray-3: rgba(122, 122, 122, 1);
+    --gray-5: rgba(35, 35, 35, 1);
+    --shadows-light-theme-elevation-02: 0px 4px 8px 0px rgba(35, 35, 47, 0.08), 0px 1px 2px 0px rgba(35, 35, 47, 0.06);
+    --UI-style-colors-icons-icons: var(--primitives-color-gray-100);
+    --UI-style-colors-icons-icons-duplicate: var(--primitives-color-gray-100);
+    --primitives-color-gray-100: rgba(0, 0, 0, 1);
+  }

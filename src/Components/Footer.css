@@ -1,0 +1,62 @@
+.footer{
+    width:100vw;
+    height:150px;
+    padding:35px 60px;
+    background-color: #2744A0;
+}
+
+.footer h4{
+    color: #FFF;
+
+font-family: "Noto Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 105%;
+}
+
+.footer .inputEmail{
+    display:flex;
+    margin-top: 15px;
+}
+
+.footer input{
+    width:300px;
+    background-color: #2744A0;
+    border-radius: 4px;
+    border:1px solid #FFF;
+    padding:6px 12px;
+    color:#FFF;
+    font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 105%; /* 12.6px */
+letter-spacing: -0.06px;
+}
+
+.footer input::placeholder{
+    color:#FFF;
+}
+
+.footerButton{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:6px 8px;
+    border:1px solid black;
+    width:130px;
+    border-radius: 30px;
+    margin-left:10px;
+    color:#2744A0;
+    font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 105%; /* 12.6px */
+letter-spacing: -0.06px;
+}
+
+.footerButton:hover{
+    cursor:pointer;
+}

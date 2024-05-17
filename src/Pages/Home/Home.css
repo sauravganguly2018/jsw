@@ -1,0 +1,246 @@
+.frame {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  width: 1440px;
+  height: 936px;
+  position: relative;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 5733px;
+  top: 0;
+  left: 0;
+  /* background-image: url(../../assets/img/frame-483.png); */
+  background-size: 100% 100%;
+}
+
+.frame .ellipse-wrapper {
+  position: absolute;
+  width: 8px;
+  height: 733px;
+  top: 94px;
+  left: 1419px;
+  background-color: #d6e0ff;
+  border-radius: 4px;
+}
+
+.frame .ellipse {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  left: -4px;
+  background-color: #c12f33;
+  border-radius: 8px;
+}
+
+.frame .chat-typing-svgrepo {
+  /* position: absolute; */
+  /* width: 60px;
+    height: 60px;
+    top: 773px;
+    left: 1336px; */
+
+  position: fixed;
+  bottom: 20px;
+  right: 68px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.frame .div-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0px;
+  position: fixed;
+  top: 0;
+  /* Set the initial position to the top of the viewport */
+  left: 0;
+  width: 100%;
+  /* Ensure the header spans the full width */
+  background-color: #ffffff;
+  /* Adjust background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add shadow for visual effect */
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+
+
+.frame .div-2.visible {
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  transform: translateY(0);
+}
+
+.frame .div-3 {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 16px; */
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .JSW-vaani-logo {
+  position: relative;
+  width: 152px;
+  height: 48px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  height: 48px;
+}
+
+.frame .div-4 {
+  position: absolute;
+  width: 76px;
+  height: 48px;
+  top: 0;
+  left: 76px;
+  /* background-image: url(./img/image-1-1.png); */
+  /* background-image: url(../../assets/img/image-1-1.png); */
+  background-size: 100% 100%;
+}
+
+.frame .jsw-logo {
+  position: absolute;
+  width: 78px;
+  height: 37px;
+  top: 4px;
+  left: 0;
+  object-fit: cover;
+}
+
+.frame .div-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-6 {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+  opacity: 0.8;
+}
+
+.frame .img {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Noto Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: -0.08px;
+  line-height: 16.8px;
+  white-space: nowrap;
+}
+
+.frame .group-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .group {
+  position: relative;
+  width: 32px;
+  height: 28.68px;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  height: 30px;
+  top: -1px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 12px;
+  left: 14px;
+}
+
+.frame .a {
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 900;
+  color: var(--UI-style-colors-icons-icons);
+  font-size: 22px;
+  letter-spacing: -0.11px;
+  line-height: 23.1px;
+  white-space: nowrap;
+}
+
+.frame .navbar {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  padding: 32px 80px;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  background-color: #2744a0;
+  backdrop-filter: blur(20px) brightness(100%);
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.frame .navbar.open {
+  opacity: 1;
+  /* Change opacity when navbar is open */
+}
+
+.frame .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Noto Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: -0.1px;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.displayFix {
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+}
