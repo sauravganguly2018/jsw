@@ -200,13 +200,13 @@
 
 @media screen and (max-width:450px) and (  min-height:650px){
     .successStory{
-        margin-top: -20%;
+        margin-top: -10%;
     }
 }
 
 @media screen and (max-width:450px) and (  min-height:700px){
     .successStory{
-        margin-top: -20%;
+        margin-top: -10%;
     }
     .successStory .upperContent .content p {
         font-size: 8px;

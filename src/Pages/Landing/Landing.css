@@ -214,6 +214,6 @@ line-height: 105%;
 
 @media screen and (max-width:450px) and (min-height:650px){
     .outer{
-        margin-top:-25%;
+        margin-top:-10%;
     }
 }
