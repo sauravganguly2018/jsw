@@ -88,7 +88,7 @@ const Landing = () => {
       </div>
       <OurStory/>
       <Dashboard/>
-      {/* <Testimonials/> */}
+      <Testimonials/>
       {/* <UpcomingEvents/> */}
       <Footer/>
     </>

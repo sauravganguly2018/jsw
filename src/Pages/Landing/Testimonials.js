@@ -10,6 +10,7 @@ import img5 from '../../assets/img/landing/img5.jpeg'
 const Testimonials = () => {
   return (
     <div className="testimonials">
+      <div className="testimonialsInner">
       <div className="item img img1" style={{backgroundImage:`url(${img1})`, backgroundSize:'cover'}}></div>
       <div className="item content2"><div className="outerText"><div className="innerText1"><p>“Vaani helped me find new possibilities for my business”</p></div><div className="innerText2"><div></div><p>Majnu Gayen</p><p>56 years old</p><p>Shop owner in Mayanagar</p></div></div></div>
       <div className="item img img2" style={{backgroundImage:`url(${img2})`, backgroundSize:'cover'}}></div>
@@ -20,6 +21,7 @@ const Testimonials = () => {
       <div className="item content2"><div className="outerText"><div className="innerText1"><p>“Vaani helped me find new possibilities for my business”</p></div><div className="innerText2"><div></div><p>Majnu Gayen</p><p>56 years old</p><p>Shop owner in Mayanagar</p></div></div></div>
       <div className="item img img5" style={{backgroundImage:`url(${img5})`, backgroundSize:'cover'}}></div>
       <div className="item content2"><div className="outerText"><div className="innerText1"><p>“Vaani helped me find new possibilities for my business”</p></div><div className="innerText2"><div></div><p>Majnu Gayen</p><p>56 years old</p><p>Shop owner in Mayanagar</p></div></div></div>
+      </div>
     </div>
   )
 }

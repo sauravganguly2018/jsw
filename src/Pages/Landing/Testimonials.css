@@ -1,9 +1,15 @@
 .testimonials {
     display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    align-items: center;
+    height: 90vh;
     width: 100vw;
-    background-color: #2744A0;
+}
+
+.testimonialsInner{
+    display:flex;
+    flex-wrap: wrap;
+    height:100%;
+    width:100%;
 }
 
 .item {
@@ -15,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #2744A0;
 }
 
 .outerText {
@@ -184,4 +191,37 @@
     .innerText2> :nth-child(4) {
         font-size: 9px;
     }
+}
+
+@media screen and (max-width:450px){
+    .testimonials{
+        height:100vh;
+        margin-top: -10%;
+    }
+    .testimonialsInner{
+        height:80%;
+    }
+    .item{
+        border:1px solid white;
+        width:50%;
+        height:20%;
+    }
+    .innerText1{
+        font-size: 11px;
+    }
+    .innerText2> :nth-child(1){
+        width:10px;
+        height:10px;
+        border-radius: 10px;
+    }
+    .innerText2> :nth-child(2){
+        font-size: 8px;
+    }
+    .innerText2> :nth-child(3){
+        font-size: 7px;
+    }
+    .innerText2> :nth-child(4){
+        font-size: 7px;
+    }
+
 }
