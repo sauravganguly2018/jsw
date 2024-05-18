@@ -11,8 +11,8 @@ const OurStory = () => {
     <div className="successStory">
       <div className="outer1">
         <div className="upperContent">
-          <div className="img"></div>
-          <div className="content">
+          <div className="img" data-aos="fade-right" data-aos-delay="200"></div>
+          <div className="content" data-aos="fade-up" data-aos-delay="400">
             <div className="heading">
               <h2>Our Success Story</h2>
               <img src={ruler}></img>
@@ -38,7 +38,7 @@ const OurStory = () => {
           </div>
         </div>
         <div className="lowerContent">
-          <div className="inner" id="inner1">
+          <div className="inner" id="inner1" data-aos="fade-up" data-aos-delay="200">
             <div
               className="img"
               style={{
@@ -56,7 +56,7 @@ const OurStory = () => {
               id.{" "}
             </p>
           </div>
-          <div className="inner" id="inner1">
+          <div className="inner" id="inner1" data-aos="fade-up" data-aos-delay="400">
             <div
               className="img"
               style={{
@@ -74,7 +74,7 @@ const OurStory = () => {
               id.{" "}
             </p>
           </div>
-          <div className="inner" id="inner1">
+          <div className="inner" id="inner1" data-aos="fade-up" data-aos-delay="600">
             <div
               className="img"
               style={{

@@ -10,16 +10,16 @@ const UpcomingEvents = () => {
   return (
     <div className="upcomingEvents">
       <div className="outer2">
-        <div className="heading2">
+        <div className="heading2" data-aos="fade-right" data-aos-delay="200">
           <h2>Upcoming events</h2>
           <img src={ruler}></img>
         </div>
         <div className="outer3">
-          <div className="calendar">
+          <div className="calendar" data-aos="fade-up" data-aos-delay="400">
             <img src={calendar}></img>
           </div>
           <div className="cards">
-          <div className="card card1">
+          <div className="card card1" data-aos="fade-up" data-aos-delay="600">
             <img src={card1}></img>
             <div className="cardContent">
               <div className="cardSubtitle">15/04/224 | 2:00pm IST | Online</div>
@@ -31,7 +31,7 @@ const UpcomingEvents = () => {
               <Link href="#" className="learnMore">Learn more</Link>
             </div>
           </div>
-          <div className="card card2">
+          <div className="card card2" data-aos="fade-up" data-aos-delay="800">
             <img src={card2}></img>
             <div className="cardContent">
             <div className="cardSubtitle">15/04/224 | 2:00pm IST | Online</div>
@@ -43,7 +43,7 @@ const UpcomingEvents = () => {
               <Link href="#" className="learnMore">Learn more</Link>
             </div>
           </div>
-          <div className="pagination">
+          <div className="pagination" data-aos="fade-up" data-aos-delay="200">
             <div className="inactive"></div>
             <div className="active"></div>
             <div className="inactive"></div>

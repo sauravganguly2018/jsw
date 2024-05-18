@@ -57,7 +57,7 @@ const Header = () => {
 
             </div> */}
 
-            <div className="header">
+            <div className="header" data-aos="fade-down">
                 <div className="jswVaaniLogo">
                     <img src={jswVaaniLogo}></img>
                 </div>

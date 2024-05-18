@@ -56,7 +56,7 @@ const Landing = () => {
       <div className="outer">
         <div className="circle"></div>
         <div className="outer1">
-          <div className="innerDiv">
+          <div className="innerDiv" data-aos="slide-up">
             <img className="img1" src={girlsImg}></img>
             <div className="contentDiv contentDiv1">
               <p>join our family of women enterpreneurs!</p>
@@ -70,7 +70,7 @@ const Landing = () => {
               <img src={ruler}></img>
             </div>
           </div>
-          <div className="innerDiv">
+          <div className="innerDiv" data-aos="slide-up">
             <div className="contentDiv contentDiv2">
               <p>Collaborate with us as a partner</p>
               <p><span>24</span> and counting</p>

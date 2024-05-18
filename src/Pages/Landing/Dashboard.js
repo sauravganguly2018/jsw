@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="outer2">
-        <div className="indiaMap">
+        <div className="indiaMap" data-aos="fade-up" data-aos-delay="400">
           <div class="child child1" ></div>
           <div class="child child2"></div>
           <div class="child child3"></div>
@@ -25,7 +25,7 @@ const Dashboard = () => {
             />
           </svg>
         </div>
-        <div className="content">
+        <div className="content" data-aos="fade-left" data-aos-delay="800">
           <div className="mainContent">
             <div className="mainContentText">
               <div className="text">
