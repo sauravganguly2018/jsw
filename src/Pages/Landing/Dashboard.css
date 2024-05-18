@@ -215,3 +215,51 @@ filter: blur(101.8499984741211px);
         margin-top: -45%;
     }
 }
+
+@media screen and (max-width:450px){
+    .dashboard{
+        margin-top:-10%;
+    }
+    .outer2{
+        display:block;
+    }
+    .outer2 .indiaMap{
+        width:auto;
+        height:50%;
+    }
+    .child{
+        width:15px;
+        height:15px;
+    }
+    .outer2 .content{
+        width:auto;
+        height:50%;
+    }
+    .content .mainContent{
+        position:initial;
+        display:flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+        height:80%;
+        width:auto;
+    }
+    .mainContentText{
+        width:auto;
+        height:70%;
+    }
+    .mainContentText .text{
+        height:33%;
+    }
+    .mainContentText h4{
+        font-size: 22px;
+    }
+    .mainContentText p{
+        font-size: 13px;
+    }
+    .mainContentButton{
+        margin-top: 5%;
+        height:20%;
+        width:auto;
+    }
+}

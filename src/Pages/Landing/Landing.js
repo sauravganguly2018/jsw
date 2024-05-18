@@ -87,9 +87,9 @@ const Landing = () => {
         </div>
       </div>
       <OurStory/>
-      {/* <Dashboard/>
-      <Testimonials/>
-      <UpcomingEvents/> */}
+      <Dashboard/>
+      {/* <Testimonials/> */}
+      {/* <UpcomingEvents/> */}
       <Footer/>
     </>
   );
