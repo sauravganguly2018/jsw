@@ -60,3 +60,18 @@ letter-spacing: -0.06px;
 .footerButton:hover{
     cursor:pointer;
 }
+
+@media screen and (max-width:450px){
+    .footer{
+        padding:35px 35px;
+    }
+    .footer h4{
+        font-size: 18px;
+    }
+    .footer input{
+        width:175px;
+    }
+    .footerButton{
+        width:100px;
+    }
+}

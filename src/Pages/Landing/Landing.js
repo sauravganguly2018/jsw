@@ -89,7 +89,7 @@ const Landing = () => {
       <OurStory/>
       <Dashboard/>
       <Testimonials/>
-      {/* <UpcomingEvents/> */}
+      <UpcomingEvents/>
       <Footer/>
     </>
   );
