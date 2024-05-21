@@ -42,7 +42,7 @@ const Landing = () => {
             </div> */}
       <Header/>
       <div className="floatingChat">
-      <BiMessageAlt style={{width:"100%", height:"100%"}}/>
+      <BiMessageAlt style={{width:"100%", height:"100%",overflow:"hidden"}}/>
       </div>
       <ReactPlayer 
         url={VideoPath}

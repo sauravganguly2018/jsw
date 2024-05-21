@@ -1,0 +1,227 @@
+.testimonials {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.testimonialsInner{
+    display:flex;
+    flex-wrap: wrap;
+    height:100%;
+    width:100%;
+}
+
+.item {
+    width: 20%;
+    height: 50%;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2744A0;
+}
+
+.outerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 75%;
+}
+
+.innerText1 {
+    /* height:60%; */
+    color: #FFF;
+
+    font-family: "Noto Sans";
+    font-size: var(--font-size-28);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.innerText2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* height:40%; */
+}
+
+.innerText2> :nth-child(1) {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #C12F33;
+    margin-bottom: 3px;
+}
+
+.innerText2> :nth-child(2) {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.innerText2> :nth-child(3) {
+    color: #FFF;
+
+    font-family: "Noto Sans";
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%;
+}
+
+.innerText2> :nth-child(4) {
+    color: #FFF;
+
+    font-family: "Noto Sans";
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+}
+
+@media screen and (max-width:1150px) {
+    .outerText {
+
+        justify-content: space-around;
+    }
+
+    .innerText1 {
+        font-size: var(--font-size-23);
+    }
+
+    .innerText2> :nth-child(1) {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+
+    .innerText2> :nth-child(2) {
+        font-size: var(--font-size-15);
+    }
+
+    .innerText2> :nth-child(3) {
+        font-size: var(--font-size-13);
+    }
+
+    .innerText2> :nth-child(4) {
+        font-size: var(--font-size-13);
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .outerText {
+
+        justify-content: space-evenly;
+    }
+
+    .innerText1 {
+        font-size: var(--font-size-20);
+    }
+
+    .innerText2> :nth-child(1) {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+    }
+
+    .innerText2> :nth-child(2) {
+        font-size: var(--font-size-13);
+    }
+
+    .innerText2> :nth-child(3) {
+        font-size: var(--font-size-11);
+    }
+
+    .innerText2> :nth-child(4) {
+        font-size: var(--font-size-11);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .innerText1 {
+        font-size: var(--font-size-18);
+    }
+
+    .innerText2> :nth-child(1) {
+        width: 14px;
+        height: 14px;
+        border-radius: 14px;
+    }
+
+    .innerText2> :nth-child(2) {
+        font-size: var(--font-size-12);
+    }
+
+    .innerText2> :nth-child(3) {
+        font-size: var(--font-size-10);
+    }
+
+    .innerText2> :nth-child(4) {
+        font-size: var(--font-size-10);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .innerText1 {
+        font-size: var(--font-size-16);
+    }
+
+    .innerText2> :nth-child(1) {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+    }
+
+    .innerText2> :nth-child(2) {
+        font-size: var(--font-size-11);
+    }
+
+    .innerText2> :nth-child(3) {
+        font-size: var(--font-size-9);
+    }
+
+    .innerText2> :nth-child(4) {
+        font-size: var(--font-size-9);
+    }
+}
+
+@media screen and (max-width:450px){
+    .testimonials{
+        height:100vh;
+        margin-top: -10%;
+    }
+    .testimonialsInner{
+        height:80%;
+    }
+    .item{
+        border:1px solid white;
+        width:50%;
+        height:20%;
+    }
+    .innerText1{
+        font-size: var(--font-size-11);
+    }
+    .innerText2> :nth-child(1){
+        width:10px;
+        height:10px;
+        border-radius: 10px;
+    }
+    .innerText2> :nth-child(2){
+        font-size: var(--font-size-8);
+    }
+    .innerText2> :nth-child(3){
+        font-size: var(--font-size-7);
+    }
+    .innerText2> :nth-child(4){
+        font-size: var(--font-size-7);
+    }
+
+}

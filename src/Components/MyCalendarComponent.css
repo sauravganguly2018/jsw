@@ -1,0 +1,131 @@
+/* src/Calendar.css */
+.mainCalendar {
+    width: 100%;
+    height:100%;
+    padding:2%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .header2 {
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 20%;
+    margin-bottom: 5%;
+  }
+
+  .header2 .monthYear{
+    color: var(--Gray-5, #232323);
+font-family: "Noto Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+
+  .header2 .specialDay{
+    color: var(--Gray-3, #7A7A7A);
+font-family: "Noto Sans";
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .weekdays {
+    width:100%;
+    height:8%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    color: #000;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: "Noto Sans";
+font-size: 14.907px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  
+  .weekday {
+    width: 14.28%;
+    text-align: center;
+  }
+  
+  .days-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height:60%;
+  }
+  
+  .day {
+    width: 14.28%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ddd; */
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .day .innerDay{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:70%;
+    height:80%;
+    border:1px solid #DFDFDF;
+  }
+  
+  .day.weekend .innerDay{
+    background-color: #FFCDCF;
+    color: white;
+  }
+  
+  .day.today .innerDay{
+    background-color: blue;
+    color: white;
+  }
+  
+  .day.selected .innerDay{
+    background-color: green;
+    color: white;
+  }
+  
+  .day.empty .innerDay{
+    background-color: #DFDFDF;
+    /* border: none; */
+    cursor: default;
+  }
+
+  .day.next-month .innerDay{
+    background-color: #FFCDCF;
+  }
+  
+  .special {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background: yellow;
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  
+  .random-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  @media screen and (max-width:450px){
+    .header2 .monthYear{
+        font-size: 18px;
+    }
+    .header2 .specialDay{
+        font-size:13px;
+    }
+  }
+  

@@ -16,6 +16,7 @@
     bottom:20px;
     right:20px;
     z-index:2;
+    overflow: hidden;
 }
 
 .floatingChat::after{
@@ -28,15 +29,16 @@
     border-radius: 16px;
     background-color: #C12F33;
     transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease; /* Add transition */
+    z-index:-1;
 }
 
-/* .floatingChat:hover::after{
+.floatingChat:hover::after{
     width:80px;
     height:80px;
     border-radius: 80px;
     top:-20px;
     left:-20px;
-} */
+}
 
 /* .outer .circle{
     width:850px;

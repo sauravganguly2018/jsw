@@ -5,6 +5,7 @@ import calendar from "../../assets/img/landing/Faux Variant.png";
 import card1 from "../../assets/img/landing/card1.jpeg";
 import card2 from "../../assets/img/landing/card2.jpeg";
 import { Link } from "react-router-dom";
+import Calendar from "../../Components/MyCalendarComponent";
 
 const UpcomingEvents = () => {
   return (
@@ -16,7 +17,8 @@ const UpcomingEvents = () => {
         </div>
         <div className="outer3">
           <div className="calendar" data-aos="fade-up" data-aos-delay="400">
-            <img src={calendar}></img>
+            {/* <img src={calendar}></img> */}
+            <Calendar/>
           </div>
           <div className="cards">
           <div className="card card1" data-aos="fade-up" data-aos-delay="600">

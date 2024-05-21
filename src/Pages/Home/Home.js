@@ -1,64 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { fetchListData } from '../../store/Actions/listActions';
-// import {Header} from '../../Components/Header';
-
-
-import './Home.css';
-import '../../App.css';
-import '../../Variables.css';
-import Header from '../../Components/Header';
-import ChatTyping from '../../assets/img/chat-typing-svgrepo-com.svg';
-
+import React, { useState, useEffect } from "react";
+import ReactPlayer from 'react-player';
+import Header from "../../Components/CommonComponents/Header/Header";
+import { BiMessageAlt } from "react-icons/bi";
+import VideoPath from '../../assets/video/jswvaani.mp4';
+import Landing from '../../Components/Landing/Landing';
+import OurStory from '../../Components/OurStory/OurStory';
+import Dashboard from '../../Components/Dashboard/Dashboard';
+import Testimonials from '../../Components/Testimonials/Testimonials';
+import UpcomingEvents from '../../Components/UpcomingEvents/UpcomingEvents';
+import Footer from '../../Components/CommonComponents/Footer/Footer';
 
 const Home = () => {
-    // const dispatch = useDispatch();
-    // const navigate = useNavigate();
-    // const listData = useSelector(state => state);
-    // console.log(listData)
-    // // const error = useSelector(state => state.list.error);
-
-
-    // const handleLogout = () => {
-    //     // Dispatch logout action
-    //     dispatch({ type: 'LOGOUT' });
-    //     navigate('/login');
-    // };
-
-    // useEffect(() => {
-    //     dispatch(fetchListData());
-    //     console.log(listData)
-    // }, [dispatch]);
-
-
-    const [showHeader, setShowHeader] = useState(false);
-
-    useEffect(() => {
-        function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            setShowHeader(scrollTop > 0);
-        }
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-
 
     return (
-        <div className="frame">
-            <div className="div">
-                <div className="overlap">
-                    <img className="chat-typing-svgrepo" src={ChatTyping} alt="Chat Typing" />
-                </div>
-
-                {showHeader && <Header/>}
-                {/* <Header /> */}
-
-
+        <>
+            <Header />
+            <div className="floatingChat">
+                <BiMessageAlt style={{ width: "100%", height: "100%" }} />
             </div>
-        </div>
+
+            <ReactPlayer
+                url={VideoPath}
+                width="100vw"
+                height="100vh"
+                style={{ marginTop: '50px' }}
+                controls={true} // Hide video controls
+                playing={true} // Start video playback automatically
+                loop={true} // Loop the video
+            />
+            <Landing/>
+            <OurStory />
+            <Dashboard />
+            <Testimonials />
+            <UpcomingEvents />
+            <Footer />
+        </>
+
     );
 };
 

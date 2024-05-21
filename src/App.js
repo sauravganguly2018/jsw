@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import store from './store/index';
 import Login from './Pages/Login/Login';
 import Home from './Pages/Home/Home';
-import Landing from './Pages/Landing/Landing';
+// import Landing from './Pages/Landing/Landing';
 import './App.css';
 import './Variables.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { FontSizeProvider } from './Components/CommonComponents/FontSizeContext';
 
 function App() {
   AOS.init({
@@ -18,33 +18,18 @@ function App() {
   });
   return (
     <Provider store={store}>
-      <Router>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/landing" element={<Landing />} />
-          <Route path="*" element={<Navigate to="/login" />} />
-        </Routes>
-      </Router>
+      <FontSizeProvider>
+        <Router>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+            {/* <Route path="/landing" element={<Landing />} /> */}
+            <Route path="*" element={<Navigate to="/home" />} />
+          </Routes>
+        </Router>
+      </FontSizeProvider>
     </Provider>
   );
 }
-
-// const PrivateRoute = ({ component: Component, ...rest }) => {
-//   // Check if user is authenticated, if not redirect to login
-//   const isLoggedIn = store.getState().isLoggedIn;
-//   return (
-//     <Route
-//       {...rest}
-//       render={props =>
-//         isLoggedIn ? (
-//           <Component {...props} />
-//         ) : (
-//           <Redirect to="/login" />
-//         )
-//       }
-//     />
-//   );
-// };
 
 export default App;

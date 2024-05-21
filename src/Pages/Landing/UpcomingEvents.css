@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
 }
 
 .upcomingEvents .outer2 {
@@ -12,7 +11,6 @@
     flex-direction: column;
     width: 80%;
     height: 70%;
-    /* background-color: green; */
 }
 
 .upcomingEvents .outer2 .heading2 {
@@ -38,14 +36,14 @@
     justify-content: space-between;
     height:85%;
     margin-top:20px;
-    /* gap:15px; */
 }
 
 .outer3 .calendar{
     /* background-color: yellow; */
     width:40%;
     height:100%;
-    
+    border-radius: 4px 24px 4px 24px;
+    box-shadow: 0px 1px 2px 0px rgba(35, 35, 47, 0.06), 0px 4px 8px 0px rgba(35, 35, 47, 0.08);
 }
 
 .outer3 .calendar img{

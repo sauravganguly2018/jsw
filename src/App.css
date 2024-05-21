@@ -17,3 +17,25 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+
+
+.floatingChat{
+  width:60px;
+  height:60px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:2;
+}
+
+.floatingChat::after{
+  position:absolute;
+  content:"";
+  top:12px;
+  left:15px;
+  width:16px;
+  height:16px;
+  border-radius: 16px;
+  background-color: #C12F33;
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease; /* Add transition */
+}

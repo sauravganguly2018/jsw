@@ -1,0 +1,117 @@
+.header{
+    position:fixed;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    height:50px;
+    z-index:1;
+    background-color: #fff;
+}
+
+.header .jswVaaniLogo img{
+    width:200px;
+    height:40px;
+}
+
+.header .headerDetails{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:13px;
+    margin-right: 15px;
+}
+
+.headerDetails p{
+    color: #000;
+font-family: "Noto Sans";
+font-size: var(--font-size-16);
+font-style: normal;
+font-weight: 400;
+line-height: 105%; /* 16.8px */
+letter-spacing: -0.08px;
+}
+
+.a-menu{
+    display:inline-block;
+}
+
+.location{
+    width:40px;
+    height:40px;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+}
+
+.incrementFont {
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    font-weight: 800;
+}
+.incrementFont:hover {
+    box-shadow: inset 0 0 10px 0 #4798ef; 
+}
+
+.deccrementFont {
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    font-weight: 800;
+}
+.deccrementFont:hover {
+    box-shadow: inset 0 0 10px 0 #4798ef; 
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .hamburger-menu .bar {
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .bar:before,
+  .bar:after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    transition: 0.5s;
+  }
+  
+  .bar::before {
+    transform: translateY(-8px);
+  }
+  
+  .bar::after {
+    transform: translateY(8px);
+  }
+
+@media screen and (max-width:450px){
+    .a-menu{
+        display:none;
+    }
+}
