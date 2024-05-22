@@ -25,7 +25,7 @@ const Dashboard = () => {
             />
           </svg>
         </div>
-        <div className="content" data-aos="fade-left" data-aos-delay="800">
+        <div className="content" data-aos="fade-down" data-aos-delay="800">
           <div className="mainContent">
             <div className="mainContentText">
               <div className="text">

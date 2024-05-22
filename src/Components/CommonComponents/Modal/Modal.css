@@ -10,23 +10,112 @@
     align-items: center;
     z-index: 1000;
   }
-  
-  .modalContent {
+
+  .modal{
     background: white;
     padding: 20px;
-    /* border-radius: 8px; */
     width: 80%;
-    max-width: 500px;
+    height:60%;
+    max-width: 450px;
+    max-height:400px;
     position: relative;
+    border-radius:8px;
+  }
+  
+  .modalImage{
+    margin-top:5px;
+    width:100%;
+    height:45%;
+  }
+
+  .modalTitle{
+    width:100%;
+    height:15%;
+    margin:5px 0;
+  }
+
+  .modalContent{
+    height: 35%;
+    overflow-y: scroll;
+  }
+
+  .modalcardSubtitle{
+    color: var(--Gray-5, #232323);
+    font-family: "Noto Sans";
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 15px;
+  }
+
+  .modalcardHeading{
+    color: var(--Gray-5, #232323);
+    font-family: "Noto Sans";
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    font-size:20px;
+  }
+
+  .modalcardText{
+    overflow: hidden;
+    color: var(--Gray-5, #232323);
+    text-overflow: ellipsis;
+    font-family: "Noto Sans";
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size:14px;
   }
   
   .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -10px;
+    right: -15px;
     background: none;
     border: none;
     font-size: var(--font-size-24);
     cursor: pointer;
+  }
+
+  @media screen and (max-width:450px){
+    .modal{
+      max-height:250px;
+    }
+
+    .modalcardSubtitle{
+      color: var(--Gray-5, #232323);
+      font-family: "Noto Sans";
+      font-size: var(--font-size-14);
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      font-size: 10px;
+    }
+  
+    .modalcardHeading{
+      color: var(--Gray-5, #232323);
+      font-family: "Noto Sans";
+      font-size: var(--font-size-20);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      font-size:13px;
+    }
+  
+    .modalcardText{
+      overflow: hidden;
+      color: var(--Gray-5, #232323);
+      text-overflow: ellipsis;
+      font-family: "Noto Sans";
+      font-size: var(--font-size-16);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      font-size:11px;
+    }
   }
   

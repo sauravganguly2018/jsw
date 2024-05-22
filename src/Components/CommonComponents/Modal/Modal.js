@@ -1,16 +1,38 @@
-import React from 'react';
-import './Modal.css';
+import React from "react";
+import "./Modal.css";
+import { IoIosClose } from "react-icons/io";
 
-const Modal = ({ show, onClose, content }) => {
-  if (!show) {
+const Modal = (props) => {
+  if (!props.show) {
     return null;
   }
 
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      props.onClose();
+    }
+  };
+
   return (
-    <div className="modalOverlay">
-      <div className="modalContent">
-        <button className="closeButton" onClick={onClose}>×</button>
-        {content}
+    <div className="modalOverlay" onClick={handleOverlayClick}>
+      <div className="modal">
+        <button className="closeButton" onClick={props.onClose}>
+          <IoIosClose style={{ width: "40px", height: "40px" }} />
+        </button>
+        <div className="modalImage">{props.image}</div>
+        <div className="modalTitle">   <div className="modalcardSubtitle">
+                  {props.date}
+                </div>
+                <div className="modalcardHeading">
+                  {props.title}
+                </div></div>
+        <div className="modalContent">
+          <div className="cardContent" style={{ height: "100%" }}>
+            <div className="modalcardText">
+              <p>{props.content}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
